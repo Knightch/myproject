@@ -1,0 +1,90 @@
+section{
+ 
+}
+*{
+  box-sizing:border-box;
+}
+.row{
+  display:flex;
+}
+.column{
+  flex:50%;
+  height:600px;
+  text-align:center;
+}
+.fa-facebook {
+  background: linear-gradient(to right, #3333ff, #9900ff);
+  color: white;
+  border-radius: 50%;
+  padding: 7px 10px 6px 10px;
+}
+
+.fa-instagram {
+  background: linear-gradient(to right, #3333ff, #9900ff);
+  color: white;
+  border-radius: 50%;
+  padding: 7px 10px 6px 10px;
+}
+
+.fa-google {
+  background: linear-gradient(to right, #3333ff, #9900ff);
+  color: white;
+  border-radius: 50%;
+  padding: 7px 10px 6px 10px;
+}
+
+.fa-skype {
+  background: linear-gradient(to right, #3333ff, #9900ff);
+  color: white;
+  border-radius: 50%;
+  padding: 7px 10px 6px 10px;
+}
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+.animated {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\assignmentCorner",
+    "\\assignmentCorner\\src",
+    "\\assignmentCorner\\src\\app",
+    "\\assignmentCorner\\src\\app\\aboutus",
+    "\\assignmentCorner\\src\\app\\blog",
+    "\\assignmentCorner\\src\\app\\contact",
+    "\\assignmentCorner\\src\\app\\footer",
+    "\\assignmentCorner\\src\\app\\pricing",
+    "\\assignmentCorner\\src\\app\\team"
+  ],
+  "SelectedNode": "\\assignmentCorner\\src\\app\\contact\\contact.component.css",
+  "PreviewInSolutionExplorer": false
+}
