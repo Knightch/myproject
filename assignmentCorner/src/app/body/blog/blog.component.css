@@ -207,7 +207,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.fadeInRight {
+.fadeInRight{
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight
 }

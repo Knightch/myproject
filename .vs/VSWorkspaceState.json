@@ -4,13 +4,10 @@
     "\\assignmentCorner",
     "\\assignmentCorner\\src",
     "\\assignmentCorner\\src\\app",
-    "\\assignmentCorner\\src\\app\\aboutus",
-    "\\assignmentCorner\\src\\app\\blog",
-    "\\assignmentCorner\\src\\app\\contact",
-    "\\assignmentCorner\\src\\app\\footer",
-    "\\assignmentCorner\\src\\app\\pricing",
-    "\\assignmentCorner\\src\\app\\team"
+    "\\assignmentCorner\\src\\app\\body",
+    "\\assignmentCorner\\src\\app\\body\\team",
+    "\\assignmentCorner\\src\\app\\header"
   ],
-  "SelectedNode": "\\assignmentCorner\\src\\app\\contact\\contact.component.css",
+  "SelectedNode": "\\assignmentCorner\\src\\app\\app-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }
