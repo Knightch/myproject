@@ -7,23 +7,7 @@ section{
 
 
 
-#first1 {
-  width: 40%;
-  height: 50%;
-}
-  #first2 {
-    width: 22%;
-    height: 50%;
-  }
-#first3 {
-  width: 47%;
-  height: 82%;
-  margin-left:2%
-}
-#first4 {
-  width: 25%;
-  height: 50%;
-}
+
 
 .item:hover > img {
   transform: none;
@@ -125,6 +109,27 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#first1{
+  width:30%;
+  margin-top:3%;
+}
+#first2 {
+  width: 30%;
+  margin-top: 3%;
+}
+#first3 {
+  width: 30%;
+  margin-top: 3%;
+  margin-right:3%
+}
+#first4 {
+  width: 30%;
+  margin-top: 3%;
+}
+
+
+
 
 
 
