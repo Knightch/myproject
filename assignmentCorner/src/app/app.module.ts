@@ -15,6 +15,8 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,7 @@ import { BodyComponent } from './body/body.component';
     PageLoaderComponent,
     HeaderComponent,
     BodyComponent
+   
   ],
   imports: [
     BrowserModule,

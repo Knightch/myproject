@@ -4,75 +4,25 @@ section{
 }
 @import url('https://fonts.googleapis.com/css?family=Amiri|Aref+Ruqaa|Cairo|Changa|El+Messiri|Harmattan|Jomhuria|Lateef|Mirza|Rakkas|Lato|Source+Sans+Pro|Ubuntu');
 /* *{transition: 0.3s linear; padding:0;margin:0;} */
-body {
-  background-image: linear-gradient(-225deg, rgba(44, 216, 213, 0.45) 0%, #C5C1FF 56%, rgba(255, 186, 195, 0.71) 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
-h2 {
-  margin: 2em;
-  letter-spacing: 0.2em;
-  color: #EEE
-}
 
-.container {
-  margin: 3em auto;
-  width: 90%;
-  text-align: center;
-  /* 	font-family: 'Aref Ruqaa', serif; */
-  font-family: 'Ubuntu', sans-serif;
-  /* font-family: 'Lato', sans-serif; */
-  font-family: 'Source Sans Pro', sans-serif;
-}
 
-.item {
-  /* 	background: #FFF; */
-  margin: 2em;
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  transform: rotate(45deg);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  padding: 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  margin: 0 auto;
+#first1 {
+  width: 40%;
+  height: 50%;
 }
-
-  .item p {
-    position: absolute;
-    transform: rotate(-45deg);
-    top: 30%;
-    left: -20%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    width: 130%;
-    text-align: center;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
+  #first2 {
+    width: 22%;
+    height: 50%;
   }
-
-  .item:hover {
-    transform: none;
-    transform: scale(1.5);
-    z-index: 2;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-
-    .item:hover > p {
-      transform: none;
-      top: 0;
-    }
-
-
-img {
-  width: 100%;
-  height: 100%;
-  transition: 0.3s linear;
-  transform: rotate(-45deg) scale(1.4)
+#first3 {
+  width: 47%;
+  height: 82%;
+  margin-left:2%
+}
+#first4 {
+  width: 25%;
+  height: 50%;
 }
 
 .item:hover > img {
@@ -95,7 +45,7 @@ p.ar {
 .column {
   flex: 50%;
   padding: 25px 25px 25px 25px;
-  height: 400px; /* Should be removed. Only for demonstration */
+  height: 50%; /* Should be removed. Only for demonstration */
 }
 
 
@@ -119,96 +69,62 @@ body::-webkit-scrollbar-thumb {
   animation-fill-mode: both
 }
 
-@-webkit-keyframes fadeInLeft {
+@keyframes fadeInUp {
   from {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    transform: translateX(-100px);
+    transform: translate3d(0,40px,0)
   }
 
   to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
+    transform: translate3d(0,0,0);
+    opacity: 1
   }
 }
 
-@-moz-keyframes fadeInLeft {
+@-webkit-keyframes fadeInUp {
   from {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    transform: translateX(-100px);
+    transform: translate3d(0,40px,0)
   }
 
   to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
+    transform: translate3d(0,0,0);
+    opacity: 1
   }
 }
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px)
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0)
-  }
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
 }
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(200px);
-    -ms-transform: translateX(200px);
-    transform: translateX(200px)
+  .ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
   }
 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0)
+  .ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
   }
+
+
+#bkimg1 {
+  background-image: url('C:\Users\GURU\Downloads\startup.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.fadeInRight{
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight
-}
+
 

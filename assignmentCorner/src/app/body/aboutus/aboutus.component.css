@@ -12,47 +12,16 @@
 }
 
 #clipart1 {
-  position: relative;
-  margin-left: 200px;
+  margin-left: 22%;
 }
-
-#clipart2 {
-  position: absolute;
-  margin-top: 100px;
-  margin-left: 480px;
-}
-  #clipart2 img {
-    position: absolute;
-    left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-  }
-@keyframes clipart2FadeInOut {
-  0% {
-    opacity: 1;
-  }
-
-  45% {
-    opacity: 1;
-  }
-
-  55% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
+@media screen and (max-width:600px){
+  #clipart1 img {
+    height: 100%;
+    width: 100%;
   }
 }
 
-#clipart2 img.type1 {
-  animation-delay:4s;
-}
-#clipart2 img.type2 {
-  animation-delay: 2s;
-}
-#clipart2 img.type3 {
-  animation-delay: 0s;
-}
+
 
 .animated {
   -webkit-animation-duration: 2s;
@@ -174,7 +143,120 @@
     opacity: 1
   }
 }
-.fadeInUp {
+.fadeInUp.active {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+#image {
+  background-image: url('https://mail.google.com/mail/u/0?ui=2&ik=e009854117&attid=0.1&permmsgid=msg-f:1639604378313751586&th=16c10b7ebd90fc22&view=att&disp=safe&realattid=f_jybvz5s50');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#second{
+  border:4px solid white;
+  width:30%;
+  
+  background:white;
+}
+mark{
+  background:yellow;
+  color:black;
+}
+
+.loader {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 12em;
+  height: 6em;
+}
+
+.box {
+  position: absolute;
+  bottom: 20%;
+  left: 7.8%;
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  border: 4px solid white;
+  border-radius: 15%;
+  transform: rotate(50deg);
+  animation: climb 6s cubic-bezier(.79, 0, .47, .97) infinite;
+}
+
+.hill {
+  position: absolute;
+  width: 8em;
+  height: 0.3em;
+  left: 0%;
+  bottom: 43%;
+  background: white;
+  transform: rotate(140deg);
+  animation: seesaw 6s linear infinite;
+}
+
+@keyframes climb {
+  0% {
+    transform: translate(0, 0) rotate(50deg);
+  }
+
+  10% {
+    transform: translate(1.1em, -0.85em) rotate(140deg);
+  }
+
+  20% {
+    transform: translate(2.3em, -1.9em) rotate(228deg);
+  }
+
+  50% {
+    transform: translate(4.5em, 0.2em) rotate(470deg);
+  }
+
+  60% {
+    transform: translate(3.7em, -0.5em) rotate(410deg);
+  }
+
+  70% {
+    transform: translate(2.4em, -1.9em) rotate(330deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(50deg);
+  }
+}
+
+@keyframes seesaw {
+  0% {
+    transform: rotate(140deg)
+  }
+
+  14% {
+    transform: rotate(140deg)
+  }
+
+  37% {
+    transform: rotate(230deg)
+  }
+
+  65% {
+    transform: rotate(230deg)
+  }
+
+  70% {
+    transform: rotate(210deg)
+  }
+
+  80% {
+    transform: rotate(160deg);
+  }
+
+  85% {
+    transform: rotate(140deg);
+  }
+
+  100% {
+    transform: rotate(140deg);
+  }
 }

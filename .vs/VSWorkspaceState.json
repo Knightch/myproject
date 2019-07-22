@@ -5,9 +5,12 @@
     "\\assignmentCorner\\src",
     "\\assignmentCorner\\src\\app",
     "\\assignmentCorner\\src\\app\\body",
-    "\\assignmentCorner\\src\\app\\body\\team",
+    "\\assignmentCorner\\src\\app\\body\\aboutus",
+    "\\assignmentCorner\\src\\app\\body\\blog",
+    "\\assignmentCorner\\src\\app\\body\\contact",
+    "\\assignmentCorner\\src\\app\\footer",
     "\\assignmentCorner\\src\\app\\header"
   ],
-  "SelectedNode": "\\assignmentCorner\\src\\app\\app-routing.module.ts",
+  "SelectedNode": "\\assignmentCorner\\src\\app\\body\\blog\\blog.component.css",
   "PreviewInSolutionExplorer": false
 }

@@ -3,7 +3,7 @@
     position: absolute;
     left: 50%;
     width: auto;
-    height: 50px;
+    height: 40%;
     text-align: center;
     background-color: white;
   }
@@ -18,16 +18,14 @@
   }
 }
 
-#box {
-  position: relative;
+#logo {
+  
+  margin-right:5%;
+}
+#content {
+ margin-left:5%;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-}
 
 #logo {
   animation: shake 10s;
@@ -176,71 +174,24 @@ a.link {
 }
 
 section {
+  background-attachment: fixed;
   background-image: url('C:\Users\GURU\Downloads\office.jpg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
 }
-
-h6 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 12px;
-}
-
-h1 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 44px;
-}
-
-.btn {
-  border-radius: 15px;
-  background: #00BCD4;
-  font: 10px;
-  color: white;
-  margin-right: 300px;
-}
-
-h5 {
-  font-size: 20px;
-  font-weight: normal;
-  text-align: center;
-}
-
-body {
-  overflow: hidden;
+p {
+  font: Didact Gothic;
+  font-size: 15px;
+  letter-spacing: 0.3px;
 }
 
 
-/* Preloader */
 
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  /* change if the mask should have another color then white */
-  z-index: 99;
-  /* makes sure it stays on top */
-}
 
-#status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  /* centers the loading animation horizontally one the screen */
-  top: 50%;
-  /* centers the loading animation vertically one the screen */
-  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
-  /* path to your loading animation */
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -100px 0 0 -100px;
-  /* is width and height divided by two */
-}
+
+
+
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
   background: linear-gradient(to left, skyblue,purple);
@@ -249,13 +200,14 @@ body {
   font-size: 18px;
   text-decoration: green solid underline;
 }
-
-@media screen and (max-width:600px) {
-  section {
-    background-image: url('C:\Users\GURU\Downloads\office.jpg.jpg');
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media screen and (min-width:768px) {
+  .btn {
+    border-radius: 15px;
+    background: #00BCD4;
+    font: 5%;
+    color: white;
+    text-align: center;
+    margin-left: -200%;
   }
 }
+

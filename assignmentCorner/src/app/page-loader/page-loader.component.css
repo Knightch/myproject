@@ -1,27 +1,71 @@
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  /* change if the mask should have another color then white */
-  z-index: 99;
-  /* makes sure it stays on top */
+body {
+  background-color: #FDE74C;
+  transition: all 1s ease-in;
+  padding: 50px;
+  color: #111;
+  font-family: sans-serif;
+  line-height: 32px;
+  font-size: 18px;
+}
+h1 {
+  font-family: sans-serif;
 }
 
-#status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  /* centers the loading animation horizontally one the screen */
-  top: 50%;
-  /* centers the loading animation vertically one the screen */
-  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
-  /* path to your loading animation */
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -100px 0 0 -100px;
-  /* is width and height divided by two */
+.colorOne {
+  background-color: #9BC53D;
+  color: #000;
 }
+
+.colorTwo {
+  background-color: #FFF;
+  color: #000;
+}
+
+#mainContent {
+  width: 420px;
+  margin: 0 auto;
+}
+
+  #mainContent p {
+    padding: 20px;
+  }
+
+  #mainContent #firstBox {
+    font-weight: bold;
+    transform: translate3d(-30px, 0, 0);
+    transition: all .5s ease-out;
+    opacity: 0;
+  }
+
+    #mainContent #firstBox.active {
+      background-color: #333;
+      color: #FFF;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+
+  #mainContent #secondBox {
+    transition: all .2s ease-in-out;
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+  }
+
+    #mainContent #secondBox.active {
+      background-color: #1581AF;
+      color: #FFF;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+
+  #mainContent ol li {
+    padding-left: 7px;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+
+    #mainContent ol li.active {
+      transform: translate3d(0px, 0, 0);
+      opacity: 1;
+    }
